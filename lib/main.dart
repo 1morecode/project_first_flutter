@@ -10,10 +10,6 @@ void main() {
   runApp(const MyApp());
 }
 
-
-
-
-
 // Flutter UI Initialized
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -21,6 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      title: "My First Flutter App",
       debugShowCheckedModeBanner: false,
       home: FirstScreen(),
     );
