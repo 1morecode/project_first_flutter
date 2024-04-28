@@ -3,19 +3,15 @@
 import 'package:flutter/material.dart';
 import 'package:project_first/screens/second_screen.dart';
 
-class FirstScreen extends StatelessWidget {
-  const FirstScreen({super.key});
+class MyContainer extends StatelessWidget {
+  const MyContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.green,
-          title: const Text("First Screen"),
-          actions: [
-            // IconButton(onPressed: (){}, icon: Icon(Icons.add)),
-            // Text("Test")
-          ],
+          title: const Text("Container"),
         ),
         body: Center(
           child: Container(

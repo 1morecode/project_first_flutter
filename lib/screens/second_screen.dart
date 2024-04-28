@@ -1,7 +1,7 @@
 //*************   © Copyrighted by 1 More Code. *********************
 
 import 'package:flutter/material.dart';
-import 'package:project_first/screens/first_screen.dart';
+import 'package:project_first/widgets/my_container.dart';
 
 class SecondScreen extends StatelessWidget {
   const SecondScreen({super.key});
@@ -17,11 +17,11 @@ class SecondScreen extends StatelessWidget {
         child: TextButton(
           onPressed: (){
 
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const FirstScreen(),
-                ));
+            // Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //       builder: (context) => const FirstScreen(),
+            //     ));
 
           },
           child: const Text("Previous Screen"),

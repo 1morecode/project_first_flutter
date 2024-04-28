@@ -1,8 +1,7 @@
 
 // Entry Point of Flutter/Dart
 import 'package:flutter/material.dart';
-import 'package:project_first/screens/first_screen.dart';
-import 'package:project_first/screens/home_page.dart';
+import 'package:project_first/home_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: "My First Flutter App",
       debugShowCheckedModeBanner: false,
-      home: FirstScreen(),
+      home: HomePage(),
     );
   }
 }
