@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_first/widgets/my_column.dart';
 import 'package:project_first/widgets/my_container.dart';
+import 'package:project_first/widgets/my_forms.dart';
 import 'package:project_first/widgets/my_gridview.dart';
 import 'package:project_first/widgets/my_listview.dart';
 import 'package:project_first/widgets/my_row.dart';
@@ -114,6 +115,20 @@ class HomePage extends StatelessWidget {
                   ));
             },
             title: const Text("GridView"),
+          ),
+          const SizedBox(
+            height: 5,
+          ),
+          ListTile(
+            tileColor: Colors.green,
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MyForms(),
+                  ));
+            },
+            title: const Text("Forms"),
           )
         ],
       ),
