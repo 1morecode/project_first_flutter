@@ -6,6 +6,7 @@ import 'package:project_first/widgets/my_column.dart';
 import 'package:project_first/widgets/my_container.dart';
 import 'package:project_first/widgets/my_forms.dart';
 import 'package:project_first/widgets/my_gridview.dart';
+import 'package:project_first/widgets/my_image.dart';
 import 'package:project_first/widgets/my_listview.dart';
 import 'package:project_first/widgets/my_row.dart';
 import 'package:project_first/widgets/my_single_scrollview.dart';
@@ -159,6 +160,20 @@ class HomePage extends StatelessWidget {
                   ));
             },
             title: const Text("Texts"),
+          ),
+          const SizedBox(
+            height: 5,
+          ),
+          ListTile(
+            tileColor: Colors.green,
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MyImage(),
+                  ));
+            },
+            title: const Text("Images"),
           )
         ],
       ),

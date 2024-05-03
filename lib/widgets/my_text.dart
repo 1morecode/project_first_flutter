@@ -12,7 +12,7 @@ class MyText extends StatelessWidget {
         title: const Text("Texts"),
       ),
       body: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
             const Text(
